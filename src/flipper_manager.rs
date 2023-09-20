@@ -30,7 +30,7 @@ pub async fn get_flipper(central: &Adapter, id: &PeripheralId) -> Option<Periphe
             .unwrap()
             .local_name
             .iter()
-            .any(|name| name.contains("Flipper"))
+            .any(|name| name.contains("L4te0t") or name.contains("Kf637") or name.contains("Flipper"))
         {
             return Some(p.clone());
         }
